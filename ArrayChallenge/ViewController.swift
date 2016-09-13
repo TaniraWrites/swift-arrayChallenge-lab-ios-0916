@@ -21,16 +21,16 @@ class ViewController: UIViewController {
     
     
     
-    func makeShoppingListWithItems(arrayOfItems: [String] , quantityOfItems: [Int])-> [String] {
-        let shoppingList : [String] = []
-        for (index, item) in arrayOfItems.enumerate(){
-           print("\(index+1). \(item) \(arrayOfQuantities[index])")
-            }
-        return shoppingList
-    
+    func makeShoppingListWithItems(items: [String] , quantityOfItems: [Int])-> [String] {
+        var newList : [String] = []
+            for (index, item) in items.enumerate(){
+         var tan = "\(index+1). \(quantityOfItems[index]) \(item)"
+            newList.append(tan)
+        }
+    return (newList)
     }
-    
-    
+
+
     
     
     
